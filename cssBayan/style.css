@@ -197,8 +197,6 @@ input[type="radio"]:checked + label {
    }
 }
 
-
-
 @media (hover: hover) {
    /* when hover is supported */
    
@@ -222,6 +220,12 @@ input[type="radio"]:checked + label {
       animation-duration: 0.5s;
       transition: all 0.5s;
    }
+
+   input[type="radio"]:checked + .accardion-head .accardion-body {
+      height: 100%;
+      opacity: 1;
+      animation: none;
+   }
 }
 
 @media (hover: none) {
@@ -244,3 +248,4 @@ input[type="radio"]:checked + label {
    0% {scale: 0;}
    100% {scale: 1;}
 }
+
